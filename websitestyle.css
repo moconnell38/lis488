@@ -1,0 +1,275 @@
+body {
+    background-color: #E6F5B0;
+}
+.header {
+    background-color:#FFFFFF;
+    text-align: left;
+    margin: auto;
+    
+}
+.header > p {
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:#000000;
+    background-color: #FFFFFF;
+    width: 25%;
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #8DA242;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 33.33%;
+    margin: auto;
+    height: 100px;
+    line-height: 100px;
+}
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #A7BC5B;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header li{
+    float: left;
+}
+
+.header li a {
+    display: block;
+    color:#FFFFFF;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header li a:hover {
+background-color:#8DA242;
+color: #FFFFFF;
+}
+
+.techprof ul {
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+.name {
+    background-image: url(greenfloralbackground.jpg);
+    background-repeat: repeat-x;
+    color: #000000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight:bolder;
+    letter-spacing: 4px;
+    margin: auto;
+    height: 100px;
+    line-height: 100px;
+}
+
+#text{
+    padding: 40px;
+}
+
+#footer{
+    margin: auto;
+    text-align: center;
+    font-size: small;
+}
+
+.flex-container {
+    display:flex;
+    flex-wrap: wrap;
+    background-color: #8DA242;
+    flex-direction: row;
+}
+
+.flex-container > div {
+    background-color: #FFFFFF;
+    width: 45%;
+    margin: 15px;
+    padding: 5px;
+    text-align:left;
+    line-height: normal;
+    font-size: large;
+    
+}
+
+
+.indent {
+    text-indent: 10%;
+}
+
+.contactbox {
+    font-size: x-large;
+}
+
+.flex-container dt {
+    font-weight: bold;
+    font-size: large;
+}
+
+.flex-container dd{
+    font-size: medium;
+}
+h2 {
+    font-size: x-large;
+    text-align: center;
+}
+
+#body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img{
+    object-fit: contain;
+}
+/*the styling for the slideshow came from this link: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+* {box-sizing:border-box}
+
+/* Slideshow container */ 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #FFFFFF;
+  font-size: medium;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+@media (max-width: 1000px) {
+    #menu{
+        text-align:left;
+    }
+    #menu li {
+        padding: 2px;
+        display:list-item;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+    .flex-container > div {
+        width: 90%;
+    }
+
+    h1{
+        text-align: center;
+    }
+    body{
+        font-family: sans-serif;
+    }
+    img{
+        object-fit: contain;
+    }
+    h1 {
+        font-size: medium;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #8DA242;
+        text-align: center;
+        background-color: #FFFFFF;
+        width: 33.33%;
+        margin: auto;
+        height: 50px;
+        line-height: 50px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #A7BC5B;
+        font-size: medium;
+        font-family: sans-serif;
+    }
+    .techprof ul {
+        list-style-type: circle;
+        list-style-position: inside;
+        background-color: #FFFFFF;
+    }
+}
